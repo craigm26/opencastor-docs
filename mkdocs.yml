@@ -53,9 +53,6 @@ extra:
       link: https://github.com/craigm26/OpenCastor
     - icon: fontawesome/brands/discord
       link: https://discord.gg/opencastor
-  analytics:
-    provider: custom
-
 plugins:
   - search
   - git-revision-date-localized:
