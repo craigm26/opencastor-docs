@@ -1,0 +1,138 @@
+site_name: OpenCastor Docs
+site_url: https://docs.opencastor.com
+site_description: OpenCastor ecosystem documentation — runtime, RCAN protocol, research pipeline, and client app.
+site_author: Craig Merry
+repo_name: craigm26/OpenCastor
+repo_url: https://github.com/craigm26/OpenCastor
+edit_uri: ""
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  version:
+    provider: mike
+    default: stable
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/craigm26/OpenCastor
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/opencastor
+  analytics:
+    provider: custom
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            heading_level: 3
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - mike:
+      alias_type: symlink
+      canonical_version: stable
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quickstart: getting-started/quickstart.md
+    - Configuration: getting-started/configuration.md
+    - Hardware Profiles: getting-started/hardware-profiles.md
+  - Runtime:
+    - Overview: runtime/overview.md
+    - Agent Harness: runtime/harness.md
+    - Safety & P66: runtime/safety.md
+    - Contribute: runtime/contribute.md
+    - Castor Credits: runtime/credits.md
+    - CLI Reference: runtime/cli.md
+    - REST API: runtime/api.md
+  - RCAN Protocol:
+    - Overview: rcan/overview.md
+    - Message Types: rcan/message-types.md
+    - Scopes & Permissions: rcan/scopes.md
+    - Robot URI (RURI): rcan/ruri.md
+    - SDKs: rcan/sdks.md
+  - Research:
+    - Harness Research: research/overview.md
+    - OHB-1 Benchmark: research/ohb1-benchmark.md
+    - Search Space: research/search-space.md
+    - Contributing Compute: research/contributing.md
+    - Leaderboard: research/leaderboard.md
+  - Client App:
+    - Overview: client/overview.md
+    - Fleet View: client/fleet.md
+    - Harness Designer: client/harness-designer.md
+    - Compete: client/compete.md
+  - Reference:
+    - Changelog: reference/changelog.md
+    - Versioning: reference/versioning.md
+    - llms.txt: reference/llms-txt.md

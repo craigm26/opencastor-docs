@@ -1,0 +1,31 @@
+/* OpenCastor Kinetic Command design system */
+:root {
+  --md-primary-fg-color: #55d7ed;
+  --md-primary-fg-color--light: #55d7ed;
+  --md-primary-fg-color--dark: #0e1416;
+  --md-accent-fg-color: #ffba38;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0e1416;
+  --md-default-fg-color: #e8eaed;
+  --md-code-bg-color: #131d20;
+}
+
+/* Cyan headings */
+.md-typeset h1 { color: var(--md-primary-fg-color); }
+
+/* Amber admonition for safety notices */
+.md-typeset .admonition.safety,
+.md-typeset details.safety {
+  border-color: #ffba38;
+}
+.md-typeset .safety > .admonition-title,
+.md-typeset .safety > summary {
+  background-color: rgba(255,186,56,.1);
+  border-color: #ffba38;
+}
+.md-typeset .safety > .admonition-title::before,
+.md-typeset .safety > summary::before {
+  background-color: #ffba38;
+}

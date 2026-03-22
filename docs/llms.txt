@@ -1,0 +1,45 @@
+# OpenCastor Documentation
+
+> OpenCastor is an open-source runtime layer that sits between a robot's hardware and its AI.
+> It handles authentication, safety invariants (P66), telemetry, agent harness management,
+> and fleet coordination via the RCAN protocol (v1.9.0).
+> Current version: v2026.3.21.2
+
+## Getting Started
+- [Installation](https://docs.opencastor.com/getting-started/installation/): pip install, first boot, gateway startup
+- [Quickstart](https://docs.opencastor.com/getting-started/quickstart/): register a robot, connect the app, first command
+- [Configuration](https://docs.opencastor.com/getting-started/configuration/): arm.rcan.yaml schema, key tunables, champion configs
+- [Hardware Profiles](https://docs.opencastor.com/getting-started/hardware-profiles/): pi5-hailo, pi5, pi4, jetson-orin, server
+
+## Runtime
+- [Overview](https://docs.opencastor.com/runtime/overview/): components, startup sequence, health check
+- [Agent Harness](https://docs.opencastor.com/runtime/harness/): config schema, pattern engine, memory backends, champion configs
+- [Safety & P66](https://docs.opencastor.com/runtime/safety/): P66 invariant, priority hierarchy, consent thresholds, RCAN signal
+- [Contribute](https://docs.opencastor.com/runtime/contribute/): enable, how it works, champion deployment, run types
+- [Castor Credits](https://docs.opencastor.com/runtime/credits/): credit formula, API, future redemption
+- [CLI Reference](https://docs.opencastor.com/runtime/cli/): all castor subcommands
+- [REST API](https://docs.opencastor.com/runtime/api/): all endpoints with request/response examples
+
+## RCAN Protocol
+- [Overview](https://docs.opencastor.com/rcan/overview/): RURI, RRN, scopes, message types, safety invariants
+- [Message Types](https://docs.opencastor.com/rcan/message-types/): all 36 types across 6 categories
+- [Scopes & Permissions](https://docs.opencastor.com/rcan/scopes/): hierarchy, token format, roles, P66 enforcement
+- [Robot URI (RURI)](https://docs.opencastor.com/rcan/ruri/): format, RRN, registration
+- [SDKs](https://docs.opencastor.com/rcan/sdks/): rcan-py v0.8.0, rcan-ts v0.8.0
+
+## Research
+- [Harness Research](https://docs.opencastor.com/research/overview/): the problem, search space, how it works, tracks
+- [OHB-1 Benchmark](https://docs.opencastor.com/research/ohb1-benchmark/): 30 tasks, 4 dimensions, baseline 0.6541, run instructions
+- [Search Space](https://docs.opencastor.com/research/search-space/): 263,424 configs, 8 axes, state tracking, API
+- [Contributing Compute](https://docs.opencastor.com/research/contributing/): enable, what your robot does, credit attribution
+- [Leaderboard](https://docs.opencastor.com/research/leaderboard/): what's shown, API, privacy
+
+## Client App
+- [Overview](https://docs.opencastor.com/client/overview/): screens, design system, contribute settings
+- [Fleet View](https://docs.opencastor.com/client/fleet/): robot cards, leaderboard, offline fallback
+- [Harness Designer](https://docs.opencastor.com/client/harness-designer/): pipeline view, design panels, champion apply
+- [Compete](https://docs.opencastor.com/client/compete/): Sprint, Threshold Race, Bracket formats
+
+## Optional
+- [Changelog](https://docs.opencastor.com/reference/changelog/)
+- [Versioning](https://docs.opencastor.com/reference/versioning/)
