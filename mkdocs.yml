@@ -8,7 +8,6 @@ edit_uri: ""
 
 theme:
   name: material
-  custom_dir: overrides
   logo: assets/logo.svg
   favicon: assets/favicon.png
   palette:
@@ -59,20 +58,9 @@ extra:
 
 plugins:
   - search
-  - mkdocstrings:
-      handlers:
-        python:
-          options:
-            docstring_style: google
-            show_source: true
-            show_root_heading: true
-            heading_level: 3
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
-  - mike:
-      alias_type: symlink
-      canonical_version: stable
 
 markdown_extensions:
   - admonition
