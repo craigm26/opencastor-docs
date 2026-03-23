@@ -4,7 +4,7 @@ The OpenCastor client app is a Flutter web + iOS app for fleet management, harne
 
 **Web:** [app.opencastor.com](https://app.opencastor.com)  
 **iOS:** TestFlight (v1.3.0)  
-**Repo:** [craigm26/opencastor-client](https://github.com/craigm26/opencastor-client)
+**Repo:** [craigm26/opencastor-client](https://github.com/craigm26/opencastor-client) · 🟢 Public
 
 ## Screens
 

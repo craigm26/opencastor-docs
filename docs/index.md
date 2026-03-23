@@ -40,14 +40,19 @@
 
 ## Ecosystem
 
-| Component | Repo | Description |
-|---|---|---|
-| **Runtime** | [OpenCastor](https://github.com/craigm26/OpenCastor) | Core runtime, API, CLI, harness engine |
-| **Protocol** | [rcan-spec](https://github.com/continuonai/rcan-spec) | RCAN specification v1.9 |
-| **Python SDK** | [rcan-py](https://github.com/continuonai/rcan-py) | Python RCAN implementation |
-| **TypeScript SDK** | [rcan-ts](https://github.com/continuonai/rcan-ts) | TypeScript RCAN implementation |
-| **Research** | [opencastor-autoresearch](https://github.com/craigm26/opencastor-autoresearch) | Harness evaluation pipeline |
-| **Client App** | [opencastor-client](https://github.com/craigm26/opencastor-client) | Flutter fleet management app |
+🟢 **Public** — open source, contributions welcome  
+🔒 **Private** — internal / business / ops only
+
+| Component | Repo | Visibility | Description |
+|---|---|---|---|
+| **Runtime** | [OpenCastor](https://github.com/craigm26/OpenCastor) | 🟢 Public | Core runtime, API, CLI, harness engine |
+| **Protocol** | [rcan-spec](https://github.com/continuonai/rcan-spec) | 🟢 Public | RCAN specification v1.9 |
+| **Python SDK** | [rcan-py](https://github.com/continuonai/rcan-py) | 🟢 Public | Python RCAN implementation |
+| **TypeScript SDK** | [rcan-ts](https://github.com/continuonai/rcan-ts) | 🟢 Public | TypeScript RCAN implementation |
+| **Research** | [opencastor-autoresearch](https://github.com/craigm26/opencastor-autoresearch) | 🟢 Public | Harness evaluation pipeline |
+| **Client App** | [opencastor-client](https://github.com/craigm26/opencastor-client) | 🟢 Public | Flutter fleet management app |
+| **Docs** | [opencastor-docs](https://github.com/craigm26/opencastor-docs) | 🟢 Public | This documentation site |
+| **Ops / Business** | opencastor-ops | 🔒 Private | Business, legal, compliance, roadmap |
 
 ## Current Version
 

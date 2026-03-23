@@ -4,7 +4,7 @@
 
 - **Model:** `gemma3:1b` via local Ollama (free, no API cost, reproducible)
 - **Tasks:** 30 across 3 domains
-- **Spec:** [OHB1_SPEC.md](https://github.com/craigm26/opencastor-autoresearch/blob/master/harness_research/environments/OHB1_SPEC.md)
+- **Spec:** [OHB1_SPEC.md](https://github.com/craigm26/opencastor-autoresearch/blob/master/harness_research/environments/OHB1_SPEC.md) · 🟢 Public
 
 ## Task domains
 

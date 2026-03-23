@@ -53,4 +53,4 @@ GET /api/research/contributors
 
 ## Future: credit redemption
 
-Credits are currently informational. Pro tier redemption (compute credits, priority support) is planned. See the [business plan](https://github.com/craigm26/opencastor-ops/blob/main/docs/BUSINESS_PLAN.md) for details.
+Credits are currently informational. Pro tier redemption (compute credits, priority support) is planned. See the business plan (internal — `opencastor-ops` 🔒 Private) for details.

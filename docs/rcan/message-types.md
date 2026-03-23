@@ -56,4 +56,4 @@ RCAN v1.9 defines 36 message types across 6 categories. The spec is the single s
 | `PEER_DISCOVER` | 51 | Discover peers on network |
 | `PEER_TEST` | 52 | Latency/connectivity test |
 
-Full spec: [rcan-spec §3](https://github.com/continuonai/rcan-spec)
+Full spec: [rcan-spec §3](https://github.com/continuonai/rcan-spec) 🟢 Public

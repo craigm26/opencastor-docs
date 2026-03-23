@@ -3,9 +3,9 @@
 **RCAN** (Robot Communication & Authentication Network) is the open protocol that gives every robot a canonical identity, scoped permissions, and standardized message types.
 
 - **Current version:** v1.9.0
-- **Spec repo:** [continuonai/rcan-spec](https://github.com/continuonai/rcan-spec)
-- **Python SDK:** [continuonai/rcan-py](https://github.com/continuonai/rcan-py) v0.8.0
-- **TypeScript SDK:** [continuonai/rcan-ts](https://github.com/continuonai/rcan-ts) v0.8.0
+- **Spec repo:** [continuonai/rcan-spec](https://github.com/continuonai/rcan-spec) 🟢 Public
+- **Python SDK:** [continuonai/rcan-py](https://github.com/continuonai/rcan-py) v0.8.0 🟢 Public
+- **TypeScript SDK:** [continuonai/rcan-ts](https://github.com/continuonai/rcan-ts) v0.8.0 🟢 Public
 
 ## Core concepts
 

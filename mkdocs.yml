@@ -120,4 +120,5 @@ nav:
   - Reference:
     - Changelog: reference/changelog.md
     - Versioning: reference/versioning.md
+    - Repositories: repositories.md
     - llms.txt: reference/llms-txt.md
