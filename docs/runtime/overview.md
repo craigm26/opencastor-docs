@@ -37,8 +37,8 @@ GET /api/status
 
 ```json
 {
-  "version": "v2026.3.21.2",
-  "rcan_version": "1.9.0",
+  "version": "v2026.3.27.1",
+  "rcan_version": "2.2.0",
   "runtime": "ok",
   "p66": "active",
   "contribute": "idle",

@@ -46,7 +46,7 @@
 | Component | Repo | Visibility | Description |
 |---|---|---|---|
 | **Runtime** | [OpenCastor](https://github.com/craigm26/OpenCastor) | 🟢 Public | Core runtime, API, CLI, harness engine |
-| **Protocol** | [rcan-spec](https://github.com/continuonai/rcan-spec) | 🟢 Public | RCAN specification v1.9 |
+| **Protocol** | [rcan-spec v2.2 |
 | **Python SDK** | [rcan-py](https://github.com/continuonai/rcan-py) | 🟢 Public | Python RCAN implementation |
 | **TypeScript SDK** | [rcan-ts](https://github.com/continuonai/rcan-ts) | 🟢 Public | TypeScript RCAN implementation |
 | **Research** | [opencastor-autoresearch](https://github.com/craigm26/opencastor-autoresearch) | 🟢 Public | Harness evaluation pipeline |
@@ -56,7 +56,7 @@
 
 ## Current Version
 
-- **OpenCastor:** `v2026.3.21.2`
-- **RCAN Spec:** `v1.9.0`
-- **rcan-py:** `v0.8.0` · **rcan-ts:** `v0.8.0`
-- **OHB-1 Champion:** `lower_cost` — score `0.6541` (21/30 tasks)
+- **OpenCastor:** `v2026.3.27.1`
+- **RCAN Spec:** `v2.2.0`
+- **rcan-py:** `v1.2.1` · **rcan-ts:** `v1.2.1`
+- **OHB-1 Champion:** `vla-dual-brain` (OpenCastor Dual-Brain, RCAN v2.2)

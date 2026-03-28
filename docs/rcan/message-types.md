@@ -1,6 +1,6 @@
 # Message Types
 
-RCAN v1.9 defines 36 message types across 6 categories. The spec is the single source of truth — all SDK implementations are generated from it.
+RCAN v2.2 defines 40 message types across 6 categories. The spec is the single source of truth — all SDK implementations are generated from it.
 
 ## Command & Control
 

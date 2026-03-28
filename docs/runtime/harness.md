@@ -33,18 +33,18 @@ harness:
   drift_detection: true
   p66_consent_threshold: physical
 
-  # Pattern layer (new in v2026.3.21)
+  # Pattern layer (new in v2026.3.27)
   pattern:
     name: single_agent_supervisor   # single_agent_supervisor | initializer_executor | multi_agent
     config: {}
 
-  # Memory layer (new in v2026.3.21)
+  # Memory layer (new in v2026.3.27)
   memory:
     backend: working                # working | filesystem | firestore
     overflow_strategy: summarize    # summarize | drop_oldest | error
     max_tokens: 8192
 
-  # Security/observability layer (new in v2026.3.21)
+  # Security/observability layer (new in v2026.3.27)
   security:
     guardrail: none                 # none | opa
     telemetry: false

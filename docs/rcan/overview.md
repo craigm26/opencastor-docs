@@ -2,10 +2,10 @@
 
 **RCAN** (Robot Communication & Authentication Network) is the open protocol that gives every robot a canonical identity, scoped permissions, and standardized message types.
 
-- **Current version:** v1.9.0
+- **Current version:** v2.2.0
 - **Spec repo:** [continuonai/rcan-spec](https://github.com/continuonai/rcan-spec) 🟢 Public
-- **Python SDK:** [continuonai/rcan-py](https://github.com/continuonai/rcan-py) v0.8.0 🟢 Public
-- **TypeScript SDK:** [continuonai/rcan-ts](https://github.com/continuonai/rcan-ts) v0.8.0 🟢 Public
+- **Python SDK:** [continuonai/rcan-py](https://github.com/continuonai/rcan-py) `v1.2.1` 🟢 Public
+- **TypeScript SDK:** [continuonai/rcan-ts](https://github.com/continuonai/rcan-ts) `v1.2.1` 🟢 Public
 
 ## Core concepts
 
@@ -53,3 +53,11 @@ RCAN encodes safety guarantees at the protocol level:
 - **Scope validation** — tokens are checked against scope before any action is taken
 
 These are enforced in code, not configuration.
+
+## RCAN v2.2 — Key additions
+
+- **ML-DSA-65 signing** (FIPS 204) — Ed25519 fully removed; all messages signed with post-quantum algorithm
+- **Multi-type entity numbering** — RRN (robots), RCN (components), RMN (models), RHN (harnesses)
+- **LoA enforcement** — Level of Assurance gate on all control-scope commands
+- **EU AI Act compliance** — firmware attestation (`firmware_hash`), SBOM publication, 10-year audit retention
+- **Dual-brain architecture** — VLA reactive brain + LLM planning brain with confidence gate
