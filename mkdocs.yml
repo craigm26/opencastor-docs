@@ -88,7 +88,8 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Blog:
-    - "MCP Server & EU AI Act": blog/2026-03-29-mcp-server.md
+    - "MCP Server & EU AI Act": blog/2026-03-29-rcan-compliance-sprint.md
+  - blog/2026-03-29-mcp-server.md
   - MCP Server: mcp.md
   - Getting Started:
     - Installation: getting-started/installation.md
