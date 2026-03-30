@@ -56,7 +56,7 @@
 
 ## Current Version
 
-- **OpenCastor:** `v2026.3.27.1`
+- **OpenCastor: `v2026.3.30.0``
 - **RCAN Spec:** `v2.2.0`
 - **rcan-py:** `v1.2.1` · **rcan-ts:** `v1.2.1`
 - **OHB-1 Champion:** `vla-dual-brain` (OpenCastor Dual-Brain, RCAN v2.2)

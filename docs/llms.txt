@@ -3,7 +3,7 @@
 > OpenCastor is an open-source runtime layer that sits between a robot's hardware and its AI.
 > It handles authentication, safety invariants (P66), telemetry, agent harness management,
 > and fleet coordination via the RCAN protocol (v1.9.0).
-> Current version: v2026.3.21.2
+> Current version: v2026.3.30.0
 
 ## Getting Started
 - [Installation](https://docs.opencastor.com/getting-started/installation/): pip install, first boot, gateway startup

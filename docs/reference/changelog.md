@@ -1,5 +1,22 @@
 # Changelog
 
+## OpenCastor v2026.3.30.0 — 2026-03-30
+
+### MCP Fleet Tools
+- `fleet_status()` — live status summary for all fleet robots (LoA 0)
+- `fleet_broadcast(instruction, scope, rrns)` — parallel dispatch to multiple robots (LoA 1)
+- `fleet_estop(rrns)` — emergency stop all robots, always LoA 0 (Protocol 66)
+- `fleet_navigate(waypoints_by_rrn)` — coordinated parallel navigation (LoA 1)
+
+### MCP Streaming Telemetry
+- `castor__stream_telemetry(rrn, duration_s, fields)` — collect live WebSocket frames and return per-field `{min, max, mean, last, samples}` statistics; falls back to polling `/api/status` when WS unavailable; cap 60s
+
+### Tests
+- 21 new tests (12 fleet + 9 stream); all passing across Python 3.10/3.11/3.12
+
+---
+
+
 ## OpenCastor v2026.3.27.1 — 2026-03-27
 
 - **RCAN v2.2 full ecosystem** — rcan-py v1.2.1, rcan-ts v1.2.1, rcan-spec v2.2.0

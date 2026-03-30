@@ -42,7 +42,7 @@ Expected response:
 
 ```json
 {
-  "version": "v2026.3.27.1",
+  "version": "v2026.3.30.0",
   "rcan_version": "2.2.0",
   "runtime": "ok",
   "p66": "active"
