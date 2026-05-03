@@ -1,5 +1,22 @@
 # Installation
 
+## Choose a deployment pattern
+
+OpenCastor supports four deployment patterns from the OpenCastor
+stack spec:
+
+1. **Declaration-only.** `pip install robot-md`. Manifest authoring,
+   schema validation, dry-run agent planning. No physical robot
+   moves.
+2. **Gateway Mode.** `pip install robot-md-gateway` + a `gateway init`
+   wizard. Single-robot local deployment with the open safety kernel.
+3. **OpenCastor Full** (this guide below). The productized runtime —
+   gateway embedded, plus drivers, fleet, cloud bridge, UI.
+4. **Regulated overlay.** Any of the above + signed evidence bundle
+   export to RRF + jurisdiction-specific compliance packets.
+
+This installation guide covers Pattern 3.
+
 ## Requirements
 
 - Python 3.10+

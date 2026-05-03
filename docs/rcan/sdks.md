@@ -48,9 +48,4 @@ await client.sendCommand('pick up the cup');
 
 Both SDKs are validated against the [rcan-spec](https://github.com/continuonai/rcan-spec) 🟢 Public. The spec is the single source of truth — all message type IDs, scope levels, and ML-DSA-65 signing requirements are defined there.
 
-Current spec version: **v2.2.0**
-
-| SDK | Spec version | Tests |
-|---|---|---|
-| rcan-py v1.2.1 | v2.2 | 675 |
-| rcan-ts v1.2.1 | v2.2 | 545 |
+See the [live compatibility matrix →](https://rcan.dev/compatibility) for the currently supported spec version and SDK test counts.

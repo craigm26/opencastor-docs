@@ -1,6 +1,25 @@
 # OpenCastor Documentation
 
-**OpenCastor** is an open-source runtime layer that sits between a robot's hardware and its AI. It handles authentication, safety invariants, telemetry, agent harness management, and fleet coordination — so you can focus on what your robot does, not how it stays safe.
+**OpenCastor** is a productized open-core RCAN runtime — Layer 4 of
+the OpenCastor stack. It bundles the
+[`robot-md-gateway`](https://github.com/RobotRegistryFoundation/robot-md-gateway)
+safety kernel (Layer 3) with drivers, reactive safety, telemetry,
+fleet management, and a cloud bridge. The safety kernel is open and
+identical in every tier; OpenCastor's commercial value is in
+operational ergonomics, fleet scale, and compliance prep.
+
+## Where OpenCastor sits in the OpenCastor stack
+
+| Layer | Project | Role |
+|---|---|---|
+| 1 | [robot-md](https://github.com/RobotRegistryFoundation/robot-md) | Declaration — ROBOT.md manifest |
+| 2 | (any MCP host) | Agent runtime — Claude Code, Codex, Gemini |
+| 3 | [robot-md-gateway](https://github.com/RobotRegistryFoundation/robot-md-gateway) | Mandatory exclusive enforcement path |
+| 4 | **OpenCastor** ← *this* | Productized robot-facing runtime |
+| 5 | [rcan-spec](https://github.com/continuonai/rcan-spec) | Wire protocol |
+| 6 | [RRF](https://robotregistryfoundation.org) | Identity + evidence registry |
+
+[See the live compatibility matrix →](https://rcan.dev/compatibility)
 
 <div class="grid cards" markdown>
 
@@ -46,7 +65,7 @@
 | Component | Repo | Visibility | Description |
 |---|---|---|---|
 | **Runtime** | [OpenCastor](https://github.com/craigm26/OpenCastor) | 🟢 Public | Core runtime, API, CLI, harness engine |
-| **Protocol** | [rcan-spec v2.2 |
+| **Protocol** | [rcan-spec](https://github.com/continuonai/rcan-spec) | 🟢 Public | [RCAN protocol](https://rcan.dev/spec/) wire spec |
 | **Python SDK** | [rcan-py](https://github.com/continuonai/rcan-py) | 🟢 Public | Python RCAN implementation |
 | **TypeScript SDK** | [rcan-ts](https://github.com/continuonai/rcan-ts) | 🟢 Public | TypeScript RCAN implementation |
 | **Research** | [opencastor-autoresearch](https://github.com/craigm26/opencastor-autoresearch) | 🟢 Public | Harness evaluation pipeline |
@@ -54,9 +73,10 @@
 | **Docs** | [opencastor-docs](https://github.com/craigm26/opencastor-docs) | 🟢 Public | This documentation site |
 | **Ops / Business** | opencastor-ops | 🔒 Private | Business, legal, compliance, roadmap |
 
-## Current Version
+## Versions
 
-- **OpenCastor: `v2026.3.30.0``
-- **RCAN Spec:** `v2.2.0`
-- **rcan-py:** `v1.2.1` · **rcan-ts:** `v1.2.1`
-- **OHB-1 Champion:** `vla-dual-brain` (OpenCastor Dual-Brain, RCAN v2.2)
+OpenCastor version numbers and compatible [RCAN protocol](https://rcan.dev/compatibility) releases are tracked in the live compatibility matrix.
+
+- **OpenCastor:** see [changelog](reference/changelog.md)
+- **RCAN protocol compatibility:** [rcan.dev/compatibility →](https://rcan.dev/compatibility)
+- **OHB-1 Champion:** `vla-dual-brain` (OpenCastor Dual-Brain)
