@@ -8,7 +8,7 @@ fleet management, and a cloud bridge. The safety kernel is open and
 identical in every tier; OpenCastor's commercial value is in
 operational ergonomics, fleet scale, and compliance prep.
 
-## Where OpenCastor sits in the OpenCastor stack
+## Where OpenCastor sits in the stack
 
 | Layer | Project | Role |
 |---|---|---|
