@@ -2,10 +2,10 @@
 
 **RCAN** (Robot Communication & Authentication Network) is the open protocol that gives every robot a canonical identity, scoped permissions, and standardized message types.
 
-- **Current version:** v2.2.0
-- **Spec repo:** [continuonai/rcan-spec](https://github.com/continuonai/rcan-spec) 🟢 Public
-- **Python SDK:** [continuonai/rcan-py](https://github.com/continuonai/rcan-py) `v1.2.1` 🟢 Public
-- **TypeScript SDK:** [continuonai/rcan-ts](https://github.com/continuonai/rcan-ts) `v1.2.1` 🟢 Public
+- **Protocol spec:** [continuonai/rcan-spec](https://github.com/continuonai/rcan-spec) 🟢 Public
+- **Compatibility:** [rcan.dev/compatibility →](https://rcan.dev/compatibility)
+- **Python SDK:** [continuonai/rcan-py](https://github.com/continuonai/rcan-py) 🟢 Public
+- **TypeScript SDK:** [continuonai/rcan-ts](https://github.com/continuonai/rcan-ts) 🟢 Public
 
 ## Core concepts
 
@@ -54,10 +54,18 @@ RCAN encodes safety guarantees at the protocol level:
 
 These are enforced in code, not configuration.
 
-## RCAN v2.2 — Key additions
+## Recent protocol additions
 
-- **ML-DSA-65 signing** (FIPS 204) — Ed25519 fully removed; all messages signed with post-quantum algorithm
+See [rcan.dev/compatibility](https://rcan.dev/compatibility) for the full versioned feature matrix. Recent additions include:
+
+- **ML-DSA-65 signing** (FIPS 204) — post-quantum algorithm replacing Ed25519
 - **Multi-type entity numbering** — RRN (robots), RCN (components), RMN (models), RHN (harnesses)
 - **LoA enforcement** — Level of Assurance gate on all control-scope commands
 - **EU AI Act compliance** — firmware attestation (`firmware_hash`), SBOM publication, 10-year audit retention
 - **Dual-brain architecture** — VLA reactive brain + LLM planning brain with confidence gate
+
+<!-- BEGIN: ecosystem certification disclaimer (canonical, derived from spec §10) -->
+> **Conformance is not certification.**
+>
+> Conformance to RCAN tracks (L1–L4 protocol, Gateway Authority, HIL Runtime Safety) is *self-asserted via signed bundles* and *independently replayable from those bundles*. Conformance is not certification. Certification requires audit by a qualified third-party body, which is intentionally out-of-scope for the foundation in 2026.
+<!-- END: ecosystem certification disclaimer -->

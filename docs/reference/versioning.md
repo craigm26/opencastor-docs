@@ -18,14 +18,11 @@ Semantic versioning: `MAJOR.MINOR.PATCH`
 - `MINOR` — new message types or scope changes (backward compatible)
 - `PATCH` — clarifications, editorial fixes
 
-Current: **v2.2.0**
+Pinned protocol version: see the [live compatibility matrix](https://rcan.dev/compatibility).
 
 ## rcan-py / rcan-ts
 
-Semantic versioning tracking spec minor versions:
-
-- rcan-py `v1.2.1` implements RCAN spec `v2.2`
-- rcan-ts `v1.2.1` implements RCAN spec `v2.2`
+Semantic versioning tracking spec minor versions. The SDK ↔ spec pairing currently in effect is published in the [live compatibility matrix](https://rcan.dev/compatibility); both SDKs target the same RCAN protocol version at any given release.
 
 ## opencastor-client
 
@@ -43,7 +40,4 @@ Docs are versioned with `mike`. The nav shows a version selector:
 
 ## Compatibility matrix
 
-| OpenCastor | RCAN Spec | rcan-py | rcan-ts |
-|---|---|---|---|
-| v2026.3.27.x | v2.2.0 | v1.2.1 | v1.2.1 |
-| v2026.3.20.x | v1.8.0 | v1.1.0 | v1.1.0 |
+The authoritative ecosystem-wide compatibility matrix is published live at [rcan.dev/compatibility](https://rcan.dev/compatibility). It is signed daily by the OpenCastor compatibility-matrix aggregator and lists the spec/SDK/runtime pairings currently in effect across all ecosystem projects. Static tables in docs are deprecated per the version-discipline policy (spec §8).

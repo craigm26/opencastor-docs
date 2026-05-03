@@ -7,16 +7,18 @@ A complete map of the OpenCastor ecosystem repositories and their visibility.
 
 ## Open Source (Public)
 
-| Repo | Description | Language | Latest |
-|---|---|---|---|
-| [craigm26/OpenCastor](https://github.com/craigm26/OpenCastor) 🟢 | Core runtime, API, CLI, harness engine | Python | `v2026.3.27.1` |
-| [continuonai/rcan-spec](https://github.com/continuonai/rcan-spec) 🟢 | RCAN protocol specification | Markdown | `v2.2.0` |
-| [continuonai/rcan-py](https://github.com/continuonai/rcan-py) 🟢 | Python RCAN SDK | Python | `v1.2.1` |
-| [continuonai/rcan-ts](https://github.com/continuonai/rcan-ts) 🟢 | TypeScript RCAN SDK | TypeScript | `v1.2.1` |
-| [craigm26/RobotRegistryFoundation](https://github.com/craigm26/RobotRegistryFoundation) 🟢 | Robot Registry Foundation (RRF) — robot identity registry | TypeScript/Astro | `main` |
-| [craigm26/opencastor-autoresearch](https://github.com/craigm26/opencastor-autoresearch) 🟢 | Harness evaluation pipeline | Python | `master` |
-| [craigm26/opencastor-client](https://github.com/craigm26/opencastor-client) 🟢 | Flutter fleet management app | Dart | `v1.3.0+6` |
-| [craigm26/opencastor-docs](https://github.com/craigm26/opencastor-docs) 🟢 | This documentation site | Markdown | `main` |
+Pinned protocol versions for the RCAN-coupled repos (OpenCastor, rcan-spec, rcan-py, rcan-ts) are published live at [rcan.dev/compatibility](https://rcan.dev/compatibility). The table below is the membership map; current version pairings come from the matrix.
+
+| Repo | Description | Language |
+|---|---|---|
+| [craigm26/OpenCastor](https://github.com/craigm26/OpenCastor) 🟢 | Core runtime, API, CLI, harness engine | Python |
+| [continuonai/rcan-spec](https://github.com/continuonai/rcan-spec) 🟢 | RCAN protocol specification | Markdown |
+| [continuonai/rcan-py](https://github.com/continuonai/rcan-py) 🟢 | Python RCAN SDK | Python |
+| [continuonai/rcan-ts](https://github.com/continuonai/rcan-ts) 🟢 | TypeScript RCAN SDK | TypeScript |
+| [craigm26/RobotRegistryFoundation](https://github.com/craigm26/RobotRegistryFoundation) 🟢 | Robot Registry Foundation (RRF) — robot identity registry | TypeScript/Astro |
+| [craigm26/opencastor-autoresearch](https://github.com/craigm26/opencastor-autoresearch) 🟢 | Harness evaluation pipeline | Python |
+| [craigm26/opencastor-client](https://github.com/craigm26/opencastor-client) 🟢 | Flutter fleet management app | Dart |
+| [craigm26/opencastor-docs](https://github.com/craigm26/opencastor-docs) 🟢 | This documentation site | Markdown |
 
 ## Private
 

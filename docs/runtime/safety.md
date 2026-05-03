@@ -1,5 +1,11 @@
 # Safety & Protocol 66
 
+<!-- BEGIN: ecosystem authority disclaimer (canonical, derived from spec §10) -->
+> **Where safety is actually enforced.**
+>
+> Physical safety is enforced at Layer 3 (`robot-md-gateway`) or Layer 4 (a runtime that embeds it, e.g., OpenCastor). Declaration alone (Layer 1) does not enforce safety. Agent host alone (Layer 2) is not the safety boundary. If a deployment lacks Layer 3, no safety claim attaches to it.
+<!-- END: ecosystem authority disclaimer -->
+
 !!! safety "P66 is absolute"
     Protocol 66 cannot be disabled by configuration, champion harness configs, or any API call. It is enforced at the runtime level.
 
