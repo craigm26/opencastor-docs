@@ -1,6 +1,6 @@
 # Message Types
 
-The [RCAN protocol](https://rcan.dev/compatibility) defines 40 message types across 6 categories. The spec is the single source of truth — all SDK implementations are generated from it.
+The [RCAN protocol](https://rcan.dev/spec/) defines 40 message types across 6 categories. The spec is the single source of truth — all SDK implementations are generated from it. For the protocol version currently in effect, see the [live compatibility matrix](https://rcan.dev/compatibility).
 
 ## Command & Control
 

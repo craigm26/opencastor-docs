@@ -61,7 +61,7 @@ All commands follow `castor <subcommand> [options]`.
 |---|---|
 | `castor compliance --level L4` | Run [RCAN protocol](https://rcan.dev/compatibility) supply-chain checks (L4 track) |
 | `castor compliance --level L5` | Run [RCAN protocol](https://rcan.dev/compatibility) ML-DSA-65 PQ signing checks (L5 track) |
-| `castor validate --category rcan_pq` | Full PQ signing validation suite |
+| `castor validate --category rcan_v22` | Full PQ signing validation suite (CLI category literal — see `rcan.dev/compatibility` for the protocol version it tracks) |
 | `castor validate --category protocol` | Check replay_window_seconds bounds |
 
 ## Revocation
