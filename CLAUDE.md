@@ -44,7 +44,7 @@ Reference       → changelog, versioning, llms-txt
 - **OHB-1 model:** `gemma3:1b` via Ollama
 - **Champion deployment:** ALWAYS opt-in — never auto-applied
 - **P66:** Cannot be disabled — enforced in code, not config
-- **RCAN version:** v1.9.0 (spec is the single source of truth for message type IDs)
+- **RCAN version:** see [rcan.dev/compatibility](https://rcan.dev/compatibility) (live matrix is the single source of truth for message type IDs)
 - **Bob RRN:** RRN-000000000001 | **Alex RRN:** RRN-000000000005
 - **Firestore project:** opencastor
 - **Cloudflare Pages project:** opencastor-docs
