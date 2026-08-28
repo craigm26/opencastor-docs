@@ -1,58 +1,53 @@
 # CLAUDE.md — opencastor-docs
 
-This is the OpenCastor ecosystem documentation, built with MkDocs Material and deployed to docs.opencastor.com.
+The OpenCastor ecosystem documentation: MkDocs Material, published to docs.opencastor.com. Build locally with `pip install -r requirements.txt && mkdocs serve`.
 
-## How to add a page
+## Adding a page
 
 1. Create `docs/<section>/<page>.md`
-2. Add it to `mkdocs.yml` under `nav:`
-3. Commit to `main` — Cloudflare Pages deploys automatically
+2. Register it in `mkdocs.yml` under `nav:` — a page that isn't in `nav` silently won't publish
+3. **Update `docs/llms.txt`** whenever you add pages
 
-## Nav structure
-
-```
-Getting Started → installation, quickstart, configuration, hardware-profiles
-Runtime         → overview, harness, safety, contribute, credits, cli, api
-RCAN            → overview, message-types, scopes, ruri, sdks
-Research        → overview, ohb1-benchmark, search-space, contributing, leaderboard
-Client          → overview, fleet, harness-designer, compete
-Reference       → changelog, versioning, llms-txt
-```
+The `nav:` block in `mkdocs.yml` is the authoritative section map; don't keep a copy here.
 
 ## Writing conventions
 
-- Use `!!! safety "..."` admonition for P66 and safety-critical content
-- Use `=== "Tab"` syntax for multi-language/platform examples
-- Use Mermaid for architecture diagrams (`\`\`\`mermaid`)
-- Keep pages focused — one concept per page
-- Update `docs/llms.txt` when adding new pages
-- Update `docs/reference/changelog.md` for every ecosystem release
+- `!!! safety "..."` admonition for P66 and safety-critical content — not a plain note
+- `=== "Tab"` syntax for multi-language / multi-platform examples
+- Mermaid for architecture diagrams
+- One concept per page
+- Every ecosystem release gets an entry in `docs/reference/changelog.md`
 
 ## Updating for a new OpenCastor release
 
-1. Update `docs/index.md` version table
-2. Add entry to `docs/reference/changelog.md`
-3. Update `docs/reference/versioning.md` compatibility matrix
-4. Update any pages that reference specific version numbers
-5. Update `docs/llms.txt` if new pages were added
-6. Commit — deploy is automatic
+1. `docs/index.md` — version table
+2. `docs/reference/changelog.md` — new entry
+3. `docs/reference/versioning.md` — compatibility matrix
+4. Any pages referencing specific version numbers
+5. `docs/llms.txt` if pages were added
 
-## Key facts (for AI assistants)
+## Invariants worth stating
 
-- **Search space:** 263,424 configs (8×7×7×7×2×2×3×4×2)
-- **Current champion:** `lower_cost`, OHB-1 score 0.6541 (21/30 tasks)
-- **OHB-1 model:** `gemma3:1b` via Ollama
-- **Champion deployment:** ALWAYS opt-in — never auto-applied
-- **P66:** Cannot be disabled — enforced in code, not config
-- **RCAN version:** see [rcan.dev/compatibility](https://rcan.dev/compatibility) (live matrix is the single source of truth for message type IDs)
-- **Bob RRN:** RRN-000000000001 | **Alex RRN:** RRN-000000000005
-- **Firestore project:** opencastor
-- **Cloudflare Pages project:** opencastor-docs
+- **Champion harness deployment is ALWAYS opt-in — never auto-applied.**
+- **P66 cannot be disabled** — it is enforced in code, not configuration. Don't document a way to turn it off, because there isn't one.
+- Harness search space: 263,424 configs (8×7×7×7×2×2×3×4×2). The current champion and its OHB-1 score live in `opencastor-ops/harness-research/champion.yaml` — read it rather than quoting a score here, which goes stale every research run.
+- RCAN message type IDs and spec version: [rcan.dev/compatibility](https://rcan.dev/compatibility) is the single source of truth.
+- Bob is `RRN-000000000001`; Alex is `RRN-000000000005`. Firestore project `opencastor`; Cloudflare Pages project `opencastor-docs`.
 
-## Build locally
+## Deploying
 
-```bash
-pip install -r requirements.txt
-mkdocs serve
-# open http://localhost:8000
-```
+**Push to `main` and it publishes.** `.github/workflows/deploy.yml` builds and
+ships to Cloudflare Pages in about 40 seconds, and it is green. Do NOT run
+`wrangler pages deploy` by hand here.
+
+That makes this repo a deliberate exception to the house rule that Pages
+projects are direct-upload and deployed by hand — the rule is scoped to the
+repos whose org has Actions hard-blocked on a billing failure, and this org is
+not one of them. `opencastor-runtime` (the marketing site, `deploy-pages.yml`)
+is the same exception. Verify a push landed with `gh run list` rather than
+assuming, then curl the live URL with a `?v=$(date +%s)` cache-bust.
+
+Two build traps: `mkdocs build --strict` fails on a brand-new file with "has no
+git logs" (the git-revision-date plugin), so commit before building; and the
+forbidden-phrase lint pulls its dictionary from the private `opencastor-ops`
+repo, so it cannot be checked locally.
