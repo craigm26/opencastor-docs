@@ -96,6 +96,8 @@ nav:
     - Quickstart: getting-started/quickstart.md
     - Configuration: getting-started/configuration.md
     - Hardware Profiles: getting-started/hardware-profiles.md
+  - Robots:
+    - Pollen Microduck: robots/microduck.md
   - Runtime:
     - Overview: runtime/overview.md
     - Agent Harness: runtime/harness.md
